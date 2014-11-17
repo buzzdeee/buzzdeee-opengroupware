@@ -1,0 +1,14 @@
+{
+  "name": "buzzdeee-opengroupware",
+  "version": "0.1.0",
+  "author": "Sebastian Reitenbach",
+  "summary": "A puppet module to manage OpenGroupware.",
+  "license": "Apache 2.0",
+  "source": "https://github.com/buzzdeee/buzzdeee-opengroupware.git",
+  "project_page": "https://github.com/buzzdeee/buzzdeee-opengroupware",
+  "issues_url": "https://github.com/buzzdeee/buzzdeee-opengroupware/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
