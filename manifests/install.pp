@@ -21,8 +21,14 @@ class opengroupware::install (
     creates => '/var/www/htdocs/OpenGroupware55.woa/WebServerResources',
   }
 
+  exec { 'copy ngobjweb module':
+    command => 'cp /usr/local/lib/mod_ngobjweb.so /usr/local/lib/apache/modules/mod_ngobjweb.so',
+    creates => '/usr/local/lib/apache/modules/mod_ngobjweb.so',
+  }
+
   Package[$package_name] ->
-  File[$webdirs] -> 
-  Exec['copy opengroupware webresources']
+  File[$webdirs] ->
+  Exec['copy opengroupware webresources'] ->
+  Exec['copy ngobjweb module']
 
 }
