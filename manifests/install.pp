@@ -27,9 +27,9 @@ class opengroupware::install (
   }
 
   file { '/var/www/conf/modules/ngobjweb.conf':
-    owner  => 'root',
-    group  => '0',
-    mode   => '0644',
+    owner   => 'root',
+    group   => '0',
+    mode    => '0644',
     content => "LoadModule ngobjweb_module /usr/local/lib/apache/modules/mod_ngobjweb.so\n"
   }
 

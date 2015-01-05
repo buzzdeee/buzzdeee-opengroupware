@@ -2,8 +2,8 @@ class opengroupware::config (
   $opengroupware_defaults_defaultvalues,
   $opengroupware_defaults,
 ) {
-  $commons = hiera_hash("$opengroupware_defaults_defaultvalues")
-  $defaults = hiera_hash("$opengroupware_defaults")
+  $commons = hiera_hash($opengroupware_defaults_defaultvalues)
+  $defaults = hiera_hash($opengroupware_defaults)
 
   create_resources(gsdefaults, $defaults, $commons)
 

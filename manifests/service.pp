@@ -15,16 +15,16 @@ class opengroupware::service (
   service { $webui_service_name:
     ensure => $webui_service_ensure,
     enable => $webui_service_enable,
-    flags => $webui_service_flags,
+    flags  => $webui_service_flags,
   }
   service { $xmlrpcd_service_name:
     ensure => $xmlrpcd_service_ensure,
     enable => $xmlrpcd_service_enable,
-    flags => $xmlrpcd_service_flags,
+    flags  => $xmlrpcd_service_flags,
   }
   service { $zidestore_service_name:
     ensure => $zidestore_service_ensure,
     enable => $zidestore_service_enable,
-    flags => $zidestore_service_flags,
+    flags  => $zidestore_service_flags,
   }
 }

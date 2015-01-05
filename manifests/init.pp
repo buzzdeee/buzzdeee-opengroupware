@@ -71,14 +71,14 @@ class opengroupware (
   }
 
   class { 'opengroupware::service':
-    webui_service_name   => $webui_service_name,
-    webui_service_ensure => $webui_service_ensure,
-    webui_service_enable => $webui_service_enable,
-    webui_service_flags  => $webui_service_flags,
-    xmlrpcd_service_name   => $xmlrpcd_service_name,
-    xmlrpcd_service_ensure => $xmlrpcd_service_ensure,
-    xmlrpcd_service_enable => $xmlrpcd_service_enable,
-    xmlrpcd_service_flags  => $xmlrpcd_service_flags,
+    webui_service_name       => $webui_service_name,
+    webui_service_ensure     => $webui_service_ensure,
+    webui_service_enable     => $webui_service_enable,
+    webui_service_flags      => $webui_service_flags,
+    xmlrpcd_service_name     => $xmlrpcd_service_name,
+    xmlrpcd_service_ensure   => $xmlrpcd_service_ensure,
+    xmlrpcd_service_enable   => $xmlrpcd_service_enable,
+    xmlrpcd_service_flags    => $xmlrpcd_service_flags,
     zidestore_service_name   => $zidestore_service_name,
     zidestore_service_ensure => $zidestore_service_ensure,
     zidestore_service_enable => $zidestore_service_enable,
