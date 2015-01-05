@@ -8,7 +8,8 @@
   "project_page": "https://github.com/buzzdeee/buzzdeee-opengroupware",
   "issues_url": "https://github.com/buzzdeee/buzzdeee-opengroupware/issues",
   "dependencies": [
-    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"},
+    {"name":"buzzdeee-gsdefaults","version_requirement":">= 0.1.0"}
   ]
 }
 
