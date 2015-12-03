@@ -64,12 +64,6 @@ class opengroupware (
     opengroupware_defaults               => $opengroupware_defaults,
   }
 
-  class { 'opengroupware::syslog':
-    webui_service_ensure     => $webui_service_ensure,
-    xmlrpcd_service_ensure   => $xmlrpcd_service_ensure,
-    zidestore_service_ensure => $zidestore_service_ensure,
-  }
-
   class { 'opengroupware::service':
     webui_service_name       => $webui_service_name,
     webui_service_ensure     => $webui_service_ensure,
@@ -86,7 +80,6 @@ class opengroupware (
   }
 
   Class['opengroupware::install'] ->
-  Class['opengroupware::syslog'] ->
   Class['opengroupware::config'] ~>
   Class['opengroupware::service']
 }
